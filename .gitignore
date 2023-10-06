@@ -1,4 +1,4 @@
-./dist
-./files
-./node_modules
-./data.json
+/dist
+/files
+/node_modules
+/ts/data.json

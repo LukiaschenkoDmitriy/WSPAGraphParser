@@ -1,6 +1,6 @@
 import { WSPALogger, Logger } from "./components/logger";
 import { WSPADownloader } from "./components/downloader";
-import { username, password} from "../data.json";
+import { username, password} from "./data.json";
 
 let logger: Logger = new WSPALogger({
     loginURL: "https://puw.wspa.pl/login/index.php"
