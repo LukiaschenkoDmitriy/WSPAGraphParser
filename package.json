@@ -1,0 +1,34 @@
+{
+  "name": "wspagraphparser",
+  "version": "1.0.0",
+  "description": "Parse the excel file ",
+  "main": "./app.js",
+  "scripts": {
+    "node": "node ./dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukiaschenkoDmitriy/WSPAGraphParser.git"
+  },
+  "keywords": [
+    "parser",
+    "excel",
+    "WSPA"
+  ],
+  "author": "Lukiashchenko Dmytrii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukiaschenkoDmitriy/WSPAGraphParser/issues"
+  },
+  "homepage": "https://github.com/LukiaschenkoDmitriy/WSPAGraphParser#readme",
+  "devDependencies": {
+    "@types/superagent": "^4.1.19",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "superagent": "^8.1.2"
+  }
+}
