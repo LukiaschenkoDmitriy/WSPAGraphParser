@@ -1,9 +1,8 @@
-import axios, { AxiosResponse } from "axios"
-import {Response } from "superagent";
-import {LoggerUser, Logger } from "./logger"
+import { Response } from "superagent";
+import { Logger } from "./logger"
 import fs from "fs";
 
-export class WSPADownloader {
+export class Downloader {
     private logger: Logger;
 
     public constructor(logger: Logger) {
@@ -11,7 +10,7 @@ export class WSPADownloader {
     }
 
     public download(localPath: string, fileURL: string) {
-        this.logger.autoLogin().then((response: Response | string) => {
+        this.logger.login().then((response: Response) => {
             this.logger.getAgent().get(fileURL).end((_, response) => {
                 fs.writeFile(localPath, response.body, (err) => {
                     if (err) console.log("Download error");
